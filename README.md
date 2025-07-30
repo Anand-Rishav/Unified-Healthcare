@@ -24,13 +24,13 @@ A machine-learning pipeline that predicts whether a past blood donor will donate
 ---
 
 ## 1. Project Overview
-During my data-science internship at **Unified Mentor Private Limited**, I built an end-to-end solution—data ingestion to Dockerised API—that delivers personalised donation-return predictions with an AUC-ROC of **0.93**.
+During my data-science internship at **Unified Mentor Private Limited**, I built an end-to-end solution—from data ingestion to Dockerized API—that delivers personalised donation-return predictions for blood donors.
 
 ## 2. Problem Statement
-Blood centres struggle to keep a consistent donor base. By forecasting which donors are likely to return, organisations can  
-• optimise communication spend  
-• increase donation volume  
-• reduce operational costs  
+Blood centres struggle to keep a consistent donor base. By forecasting which donors are likely to return, organisations can:
+- Optimise communication spend
+- Increase donation volume
+- Reduce operational costs
 
 ## 3. Tech Stack
 - Python 3.8  
@@ -44,10 +44,10 @@ Blood centres struggle to keep a consistent donor base. By forecasting which don
 
 ## 4. Dataset
 Fields include:  
-• Recency – months since last donation  
-• Frequency – total donations made  
-• Monetary – total blood donated (cc)  
-• Time – months since first donation  
+- Recency – months since last donation  
+- Frequency – total donations made  
+- Monetary – total blood donated (cc)  
+- Time – months since first donation  
 
 ## 5. Project Structure
 ~~~text
@@ -80,22 +80,22 @@ Fields include:
 
 ### Local
 ~~~bash
-# clone repo
-git clone https://github.com/yourusername/healthcare-recommendations.git
-cd healthcare-recommendations
+# Clone repo
+git clone https://github.com/Anand-Rishav/Unified-Healthcare.git
+cd Unified-Healthcare
 
-# create and activate venv
+# Create and activate venv
 python -m venv venv
-source venv/bin/activate            # Windows: venv\Scripts\activate
+source venv/bin/activate            # On Windows: venv\Scripts\activate
 
-# install dependencies
+# Install dependencies
 pip install -r requirements.txt
 ~~~
 
 ### Docker (optional)
 ~~~bash
-docker build -t healthcare-recommendations .
-docker run -p 8000:8000 healthcare-recommendations
+docker build -t unified-healthcare .
+docker run -p 8000:8000 unified-healthcare
 ~~~
 
 ## 7. Usage
